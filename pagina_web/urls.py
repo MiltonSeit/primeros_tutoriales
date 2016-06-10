@@ -15,6 +15,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.principal, name ='principal'),
     url(r'^html', views.html, name ='html'),
+    url(r'^css', views.css, name ='css'),
 
 
 ]
