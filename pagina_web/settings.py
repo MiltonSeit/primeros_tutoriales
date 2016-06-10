@@ -27,7 +27,7 @@ SECRET_KEY = 's!&%(rm5xuk!zx2@^p=3h!jvwe=76jg3vyw@#j1cat5ob!m@_j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-MEDIA_ROOT = '/home/milton/pagina_web/documents/'
+MEDIA_ROOT = '/home/milton/pag_web/documents/'
 
 MEDIA_URL = '/documents/'
 
