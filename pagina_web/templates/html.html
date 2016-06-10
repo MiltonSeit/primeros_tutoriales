@@ -17,7 +17,13 @@
         <section class="accordion-container">
           <a href="#" class="accordion-titulo open">Capítulo 1 "Introducción a HTML para diseñadores."<span class="toggle-icon"></span></a>
           <div class="accordion-content" style="display: block;">
-
+            <p>
+              {% for tuto in tutoriales%}
+                {% if tuto.capitulo == 1 %}
+                  </h3><a href="{{MEDIA_URL}}{{tuto.video}}"> {{tuto.titulo}}</a></h3><br>
+                {%endif%}
+              {%endfor%}
+            </p>
           </div>
         </section>
 
@@ -25,7 +31,13 @@
         <section class="accordion-container">
           <a href="#" class="accordion-titulo">Capítulo 2 "Creando páginas básicas en HTML."<span class="toggle-icon"></span></a>
           <div class="accordion-content">
-
+            <p>
+              {% for tuto in tutoriales%}
+                {% if tuto.capitulo == 2 %}
+                  </h3><a href="{{MEDIA_URL}}{{tuto.video}}"> {{tuto.titulo}}</a></h3><br>
+                {%endif%}
+              {%endfor%}
+            </p>
           </div>
         </section>
 
