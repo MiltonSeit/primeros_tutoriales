@@ -11,23 +11,23 @@
   <section class="Cuerpo_principal">
     <section id="container-main">
       <section id="container-main">
-        <h1>Capítulos de HTML 5</h1>
+        <h1>Tutoriales</h1>
 
-        <!-- Capitulo 1 -->
+        <!-- Tutorial 1 -->
         <section class="accordion-container">
-          <a href="#" class="accordion-titulo open">Capítulo 1 "Introducción a HTML para diseñadores."<span class="toggle-icon"></span></a>
+          <a href="#" class="accordion-titulo open">Turorial 1 "HTML para Diseñadores."<span class="toggle-icon"></span></a>
           <div class="accordion-content" style="display: block;">
               {% for tuto in tutoriales%}
             </h3><a href="{{tuto.video}}"> {{tuto.titulo}}</a></h3><br><br>
-                  <iframe width="800" height="380" src="{{tuto.direccion}}" frameborder="0" allowfullscreen></iframe>
+                  <iframe width="860" height="280" src="{{tuto.direccion}}" frameborder="1" allowfullscreen></iframe>
               {%endfor%}
 
           </div>
         </section>
 
-        <!-- Capitulo 2 -->
+        <!-- Tutorial 2 -->
         <section class="accordion-container">
-          <a href="#" class="accordion-titulo">Capítulo 2 "Creando páginas básicas en HTML."<span class="toggle-icon"></span></a>
+          <a href="#" class="accordion-titulo">Tutorial 2 "50 trucos con CSS."<span class="toggle-icon"></span></a>
           <div class="accordion-content">
             <p>
               {% for tuto in tutoriales%}
