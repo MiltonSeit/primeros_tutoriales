@@ -13,63 +13,63 @@
       <section id="container-main">
         <h1>Tutoriales</h1>
 
-        <!-- Tutorial 1 -->
+        <!-- Tutorial 1 HTML-->
         <section class="accordion-container">
           <a href="#" class="accordion-titulo open">Turorial 1 "HTML para Diseñadores."<span class="toggle-icon"></span></a>
           <div class="accordion-content" style="display: block;">
               {% for tuto in tutoriales%}
-            </h3><a href="{{tuto.video}}"> {{tuto.titulo}}</a></h3><br><br>
+                {% if tuto.capitulo == 1 %}
+                  <h3><a href="{{tuto.video}}"> ¿{{tuto.titulo}}?</a></h3>
                   <iframe width="860" height="280" src="{{tuto.direccion}}" frameborder="1" allowfullscreen></iframe>
-              {%endfor%}
-
+                {% endif %}
+              {% endfor %}
           </div>
         </section>
 
-        <!-- Tutorial 2 -->
+        <!-- Tutorial 2 CSS-->
         <section class="accordion-container">
           <a href="#" class="accordion-titulo">Tutorial 2 "50 trucos con CSS."<span class="toggle-icon"></span></a>
           <div class="accordion-content">
-            <p>
               {% for tuto in tutoriales%}
                 {% if tuto.capitulo == 2 %}
-                  </h3><a href="{{MEDIA_URL}}{{tuto.video}}"> {{tuto.titulo}}</a></h3><br>
+                  <h3><a href="{{tuto.video}}"> ¿{{tuto.titulo}}?</a></h3>
+                  <iframe width="860" height="280" src="{{tuto.direccion}}" frameborder="1" allowfullscreen></iframe>
                 {%endif%}
               {%endfor%}
-            </p>
           </div>
         </section>
 
         <!-- Capitulo 3 -->
         <section class="accordion-container">
-          <a href="#" class="accordion-titulo">Capítulo 3 "Mostrando catálogos de elementos con HTML."<span class="toggle-icon"></span></a>
+          <a href="#" class="accordion-titulo">Tutorial 3 "Proximamente."<span class="toggle-icon"></span></a>
           <div class="accordion-content">
           </div>
         </section>
 
         <!-- Capitulo 4 -->
         <section class="accordion-container">
-          <a href="#" class="accordion-titulo">Capítulo 4 "Dando diseño a nuestro HTML."<span class="toggle-icon"></span></a>
+          <a href="#" class="accordion-titulo">Tutorial 4 "Proximamente."<span class="toggle-icon"></span></a>
           <div class="accordion-content">
           </div>
         </section>
 
         <!-- Capitulo 5 -->
         <section class="accordion-container">
-          <a href="#" class="accordion-titulo">Capítulo 5 "Imágenes y multimedia con HTML."<span class="toggle-icon"></span></a>
+          <a href="#" class="accordion-titulo">Tutorial 5 "Proximamente."<span class="toggle-icon"></span></a>
           <div class="accordion-content">
           </div>
         </section>
 
         <!-- Capitulo 6 -->
         <section class="accordion-container">
-          <a href="#" class="accordion-titulo">Capítulo 6 "Formularios en HTML."<span class="toggle-icon"></span></a>
+          <a href="#" class="accordion-titulo">Tutorial 6 "Proximamente."<span class="toggle-icon"></span></a>
           <div class="accordion-content">
           </div>
         </section>
 
         <!-- Capitulo 7 -->
         <section class="accordion-container">
-          <a href="#" class="accordion-titulo">Capítulo 7 "Usando javascript ademas de HTML."<span class="toggle-icon"></span></a>
+          <a href="#" class="accordion-titulo">Tutorial 7 "Proximamente"<span class="toggle-icon"></span></a>
           <div class="accordion-content">
           </div>
         </section>
@@ -78,3 +78,10 @@
   </section>
   {% endblock %}
 </body>
+{% block footer %}
+<section class="botones">
+  <a href="/"><button type="button" id="button_html" name="button_html" >Principal</button></a>
+  <a href="descargas.html"><button type="button" id="button_css" name="button_css">Descargas</button></a>
+  <a href="avanzado.html"><button type="button" id="button_avanzados" name="button_avanzados">Avanzados</button></a>
+</section>
+  {% endblock%}

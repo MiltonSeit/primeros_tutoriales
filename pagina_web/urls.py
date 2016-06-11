@@ -6,11 +6,11 @@ from tutoriales import views
 from django.conf import settings
 
 urlpatterns = [
-    
+
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.principal, name ='principal'),
-    url(r'^html', views.html, name ='html'),
-    url(r'^css', views.css, name ='css'),
+    url(r'^tutoriales', views.html, name ='tutoriales'),
+    url(r'^descargas', views.descargas, name ='descargas'),
 
 
 ]

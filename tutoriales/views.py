@@ -13,8 +13,8 @@ def principal(request):
 
 def html(request):
     tutoriales = Tutoriales.objects.all()
-    return render(request, "html.html" ,{'tutoriales':tutoriales,},context_instance=RequestContext(request))
+    return render(request, "tutoriales.html" ,{'tutoriales':tutoriales,},context_instance=RequestContext(request))
 
-def css(request):
+def descargas(request):
     tutoriales = Tutoriales.objects.all()
-    return render(request, "css.html" ,{'tutoriales':tutoriales,},context_instance=RequestContext(request))
+    return render(request, "descargas.html" ,{'tutoriales':tutoriales,},context_instance=RequestContext(request))
