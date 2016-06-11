@@ -17,13 +17,11 @@
         <section class="accordion-container">
           <a href="#" class="accordion-titulo open">Capítulo 1 "Introducción a HTML para diseñadores."<span class="toggle-icon"></span></a>
           <div class="accordion-content" style="display: block;">
-            <p>
               {% for tuto in tutoriales%}
-                {% if tuto.capitulo == 1 %}
-                  </h3><a href="{{MEDIA_URL}}{{tuto.video}}"> {{tuto.titulo}}</a></h3><br>
-                {%endif%}
+            </h3><a href="{{tuto.video}}"> {{tuto.titulo}}</a></h3><br><br>
+                  <iframe width="800" height="380" src="{{tuto.direccion}}" frameborder="0" allowfullscreen></iframe>
               {%endfor%}
-            </p>
+
           </div>
         </section>
 

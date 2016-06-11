@@ -6,8 +6,9 @@ from django.db import models
 
 class Tutoriales(models.Model):
 	titulo = models.CharField(max_length=100)
-	video = models.FileField(upload_to='documents/%Y/%m/%d')
+	direccion = models.URLField(blank=True, null=True)
 	capitulo = models.IntegerField(blank=True, null=True)
+	#video = models.FileField(upload_to='documents/%Y/%m/%d')
 
 	def __str__(self):
 		return self.titulo
