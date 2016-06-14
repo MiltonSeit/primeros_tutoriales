@@ -17,7 +17,7 @@ body{
     z-index: -1;
     display: block;
     -webkit-filter: blur(5px);
-    
+
 }
 
 /*h2{
@@ -325,4 +325,8 @@ p{
     .accordion-content {
         padding: 10px 0;
     }
+}
+
+#titulo_descargas{
+  margin-left: -30%;
 }

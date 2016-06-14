@@ -9,7 +9,29 @@
 
   </nav>
   <section class="Cuerpo_principal">
+    <section id="container-main">
+      <section id="container-main">
+        <div id="titulo_descargas">
+          <h1>Descargas de Archivos de los Tutoriales</h1>
+        </div>
 
+        <!-- Tutorial 1 HTML-->
+        <section class="accordion-container">
+          <a href="#" class="accordion-titulo open">Descargas de archivos "HTML para Diseñadores."<span class="toggle-icon"></span></a>
+          <div class="accordion-content" style="display: block;">
+            <table>
+              <tr>
+                {% for des in descargas %}
+              <td>
+                    <a href="{{des.direccion}}" target="_blank">{{des.titulo}}<br> Capitulo Nº: {{des.capitulo}}</a>
+              </td>
+              {% endfor %}
+              </tr>
+            </table>
+          </div>
+        </section>
+
+      </section>
     </section>
   </section>
   {% endblock %}
