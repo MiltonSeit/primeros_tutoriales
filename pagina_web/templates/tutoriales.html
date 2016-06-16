@@ -19,7 +19,7 @@
           <div class="accordion-content" style="display: block;">
               {% for tuto in tutoriales%}
                 {% if tuto.capitulo == 1 %}
-                  <h3><a href="{{tuto.video}}"> ¿{{tuto.titulo}}?</a></h3>
+                  <h3> ¿{{tuto.titulo}}?</h3>
                   <iframe width="860" height="280" src="{{tuto.direccion}}" frameborder="1" allowfullscreen></iframe>
                 {% endif %}
               {% endfor %}
@@ -32,7 +32,7 @@
           <div class="accordion-content">
               {% for tuto in tutoriales%}
                 {% if tuto.capitulo == 2 %}
-                  <h3><a href="{{tuto.video}}"> ¿{{tuto.titulo}}?</a></h3>
+                  <h3>¿{{tuto.titulo}}?</h3>
                   <iframe width="860" height="280" src="{{tuto.direccion}}" frameborder="1" allowfullscreen></iframe>
                 {%endif%}
               {%endfor%}

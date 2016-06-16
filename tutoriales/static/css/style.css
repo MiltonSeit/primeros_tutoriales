@@ -330,3 +330,8 @@ p{
 #titulo_descargas{
   margin-left: -30%;
 }
+
+iframe{
+  text-decoration: none;
+  border-radius: 55px;
+  }
