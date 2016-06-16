@@ -346,11 +346,11 @@ iframe{
 
 
 
+
 }
 .tabla{
-  background-color: rgba(0, 0, 0,0.54);
-  border-style: solid;
-  border-color: rgba(16, 12, 16, 0.48);
   width: 170px;
+  background-color: rgba(0, 0, 0,0.54);
   text-align: center;
+  border-style: solid;
 }
