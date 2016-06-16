@@ -17,14 +17,36 @@
 
         <!-- Tutorial 1 HTML-->
         <section class="accordion-container">
-          <a href="#" class="accordion-titulo open">Descargas de archivos "HTML para Diseñadores."<span class="toggle-icon"></span></a>
+
+            <a  href="#" class="accordion-titulo open">Descargas de archivos "HTML para Diseñadores."<span class="toggle-icon"></span></a>
+
           <div class="accordion-content" style="display: block;">
-            <table>
+            <table >
               <tr>
                 {% for des in descargas %}
-              <td>
-                    <a href="{{des.direccion}}" target="_blank">{{des.titulo}}<br> Capitulo Nº: {{des.capitulo}}</a>
+                {% if des.capitulo == 1%}
+              <td class="tabla">
+                    <a class="enlaces" href="{{des.direccion}}" target="_blank">{{des.titulo}}</a>
               </td>
+              {%endif%}
+              {% endfor %}
+              </tr>
+            </table>
+          </div>
+        </section>
+        <section class="accordion-container">
+
+            <a  href="#" class="accordion-titulo open">Descargas de archivos "50 trucos con CSS."<span class="toggle-icon"></span></a>
+
+          <div class="accordion-content" style="display: block;">
+            <table >
+              <tr>
+                {% for des in descargas %}
+                {% if des.capitulo == 2%}
+              <td class="tabla">
+                    <a class="enlaces" href="{{des.direccion}}" target="_blank">{{des.titulo}}</a>
+              </td>
+              {%endif%}
               {% endfor %}
               </tr>
             </table>

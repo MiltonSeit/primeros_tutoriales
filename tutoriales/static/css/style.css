@@ -335,3 +335,22 @@ iframe{
   text-decoration: none;
   border-radius: 55px;
   }
+
+.enlaces {
+  text-decoration: none;
+  font-family: 'Arial';
+  font-size: 20px;
+  font-style: italic;
+  color:#F7E1A7;
+  text-shadow: 2px -2px #000;
+
+
+
+}
+.tabla{
+  background-color: rgba(0, 0, 0,0.54);
+  border-style: solid;
+  border-color: rgba(16, 12, 16, 0.48);
+  width: 170px;
+  text-align: center;
+}
